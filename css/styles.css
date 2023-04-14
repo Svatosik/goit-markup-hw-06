@@ -224,7 +224,6 @@ body {
 }
 .footer-container {
   display: flex;
-  gap: 120px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -241,6 +240,9 @@ body {
 }
 .logo-down {
   color: var(--light);
+}
+.footer-logo-text {
+  margin-right: 120px;
 }
 .footer-text {
   font-weight: 400;
@@ -286,6 +288,9 @@ body {
 .footer-link:hover {
   background-color: var(--success);
 }
+.footer-social {
+  margin-right: 80px;
+}
 .footer-icon {
   fill: var(--light);
   width: 24px;
@@ -295,7 +300,8 @@ body {
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  margin-right: 24px;
+  color: var(--white-background);
+  width: 264px;
 }
 .footer-input::placeholder {
   font-weight: 400;
@@ -323,6 +329,7 @@ body {
   border: none;
   transition: background-color var(--time-transition-duration)
     var(--transition-timing-function);
+  cursor: pointer;
 }
 .footer-btn:focus {
   background-color: var(--pressed-state);
@@ -337,6 +344,7 @@ body {
 }
 .footer-form-contaner {
   display: flex;
+  gap: 24px;
 }
 .hero {
   padding-top: 188px;
@@ -429,7 +437,7 @@ body {
   transition: transform var(--time-transition-duration)
     var(--transition-timing-function);
   min-width: 408px;
-  min-height: 576px;
+  min-height: 584px;
   background: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -450,6 +458,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: background-color var(--time-transition-duration)
     var(--transition-timing-function);
+  cursor: pointer;
 }
 .modal-close:focus {
   background-color: var(--pressed-state);
@@ -465,7 +474,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--dark);
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 .wrap-modal-input {
   display: flex;
@@ -483,11 +492,9 @@ body {
   /* LIGHT SLATE */
 
   color: #8e8f99;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 .modal-icons {
-  width: 18px;
-  height: 24px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -495,6 +502,7 @@ body {
   fill: var(--dark);
   transition: fill var(--time-transition-duration)
     var(--transition-timing-function);
+    cursor: pointer;
 }
 .modal-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -535,7 +543,7 @@ body {
   border-radius: 2px;
   cursor: pointer;
 
-  transition-property: fill-opacity, border-color;
+  transition-property: fill-opacity, border-color, background-color, fill;
   transition-duration: var(--time-transition-duration);
   transition-timing-function: var(--transition-timing-function);
 }
@@ -554,6 +562,8 @@ body {
 .form-input-accept:checked + .accept-craft-checkbox {
   border-color: transparent;
   fill-opacity: 1;
+  background-color: var(--pressed-state);
+  fill: var(--white-background);
 }
 
 .form-input-accept:focus + .accept-craft-checkbox {
@@ -584,8 +594,10 @@ body {
 
   transition: background-color var(--time-transition-duration)
     var(--transition-timing-function);
+  cursor: pointer;
 }
-.modal-btn:focus, .modal-btn:hover{
+.modal-btn:focus,
+.modal-btn:hover {
   background-color: var(--pressed-state);
 }
 .advantage {
