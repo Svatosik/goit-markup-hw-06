@@ -104,13 +104,113 @@
           </button>
         </div>
       </section>
-      <div class="overlay is-hidden" data-modal>
+      <div
+        class="overlay is-hidden"
+        data-modal
+      >
         <div class="modal-window">
-          <button class="modal-close" data-modal-close>
+          <button
+            class="modal-close"
+            data-modal-close
+          >
             <svg class="icon-close">
-                  <use href="./images/icons.svg#icon-cross"></use>
-                </svg>
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
           </button>
+          <form class="wrap-modal-input">
+            <p class="modal-title">
+              Leave your contacts and we will call you back
+            </p>
+
+            <label
+              for="modal-name"
+              class="modal-label"
+              >Name</label
+            >
+            <div class="wrap-modal-input">
+              <input
+                type="text"
+                class="modal-input input"
+                id="modal-name"
+                name="username"
+                required
+              />
+              <svg class="modal-icons">
+                <use href="./images/icons.svg#icon-man"></use>
+              </svg>
+            </div>
+
+            <label
+              for="modal-phone"
+              class="modal-label"
+              >Phone</label
+            >
+            <div class="wrap-modal-input">
+              <input
+                type="text"
+                id="modal-phone"
+                name="phone"
+                class="modal-input input"
+                required
+              />
+              <svg class="modal-icons">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+
+            <label
+              for="modal-mail"
+              class="modal-label"
+              >Email</label
+            >
+            <div class="wrap-modal-input">
+              <input
+                type="text"
+                id="modal-mail"
+                name="email"
+                class="modal-input input"
+                required
+              />
+              <svg class="modal-icons">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+            <label
+              for="modal-comment"
+              class="modal-label"
+              >Comment</label
+            >
+            <textarea
+              name=""
+              id="modal-comment"
+              class="modal-comment input"
+              placeholder="Text input"
+            ></textarea>
+            <label class="accept-label modal-label">
+              <input
+                class="form-input-accept visually-hidden"
+                type="checkbox"
+                name="accept"
+                required
+              />
+              <svg
+                class="accept-craft-checkbox"
+                width="16"
+                height="16"
+              >
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+              <span class="accept-label-text"
+                >I accept the terms and conditions of the
+                <a
+                  class="privacy-policy"
+                  href=""
+                  >Privacy Policy</a
+                >
+              </span>
+            </label>
+            <button class="modal-btn" type="submit">Send</button>
+          </form>
         </div>
       </div>
       <section class="advantage section">
@@ -136,7 +236,9 @@
             </li>
             <li class="advantage-item">
               <div class="advantage-iconbox">
-                <svg class="advantage-icons"><use href="./images/icons.svg#icon-clock"></use></svg>
+                <svg class="advantage-icons">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
               </div>
               <h3 class="advantage-title">Punctuality</h3>
               <p class="advantage-text">
@@ -146,7 +248,9 @@
             </li>
             <li class="advantage-item">
               <div class="advantage-iconbox">
-                <svg class="advantage-icons"><use href="./images/icons.svg#icon-diagram"></use></svg>
+                <svg class="advantage-icons">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
               </div>
               <h3 class="advantage-title">Diligence</h3>
               <p class="advantage-text">
@@ -156,7 +260,9 @@
             </li>
             <li class="advantage-item">
               <div class="advantage-iconbox">
-                <svg class="advantage-icons"><use href="./images/icons.svg#icon-astronaut" ></use></svg>
+                <svg class="advantage-icons">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
               </div>
               <h3 class="advantage-title">Technologies</h3>
               <p class="advantage-text">
@@ -248,7 +354,7 @@
                       class="social-link link"
                     >
                       <svg class="social-icons">
-                        <use href="./images/icons.svg#icon-linkedin"  "></use>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -301,7 +407,7 @@
                       class="social-link link"
                     >
                       <svg class="social-icons">
-                        <use href="./images/icons.svg#icon-linkedin"  "></use>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -354,7 +460,7 @@
                       class="social-link link"
                     >
                       <svg class="social-icons">
-                        <use href="./images/icons.svg#icon-linkedin"  "></use>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -407,7 +513,7 @@
                       class="social-link link"
                     >
                       <svg class="social-icons">
-                        <use href="./images/icons.svg#icon-linkedin"  "></use>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -543,6 +649,27 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <p class="footer-title">Subscribe</p>
+          <div class="footer-form-contaner">
+            <input
+              type="text"
+              placeholder="E-mail"
+              name="email"
+              class="footer-input input"
+              required
+            />
+            <button
+              class="footer-btn"
+              type="submit"
+            >
+              Subscribe
+              <svg class="footer-btn-svg">
+                <use href="./images/icons.svg#icon-sub"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
