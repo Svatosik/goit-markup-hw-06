@@ -41,7 +41,7 @@ form {
   --modal-overlay: rgba(46, 47, 66, 0.4);
   --white-background: #ffffff;
   --modal-background: #fcfcfc;
-  --time-transition-duration: 2500ms;
+  --time-transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
