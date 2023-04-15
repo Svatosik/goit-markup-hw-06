@@ -460,13 +460,25 @@ body {
     var(--transition-timing-function);
   cursor: pointer;
 }
+.icon-close {
+  fill: var(--dark);
+  transition: fill var(--time-transition-duration)
+    var(--transition-timing-function);
+}
 .modal-close:focus {
   background-color: var(--pressed-state);
 }
 .modal-close:hover {
   background-color: var(--pressed-state);
 }
+.modal-close:focus > .icon-close {
+  fill: var(--white-background);
+}
+.modal-close:hover > .icon-close {
+  fill: var(--white-background);
+}
 .modal-title {
+  font-weight: 500px;
   font-size: 16px;
   line-height: 1.5;
   /* identical to box height, or 150% */
@@ -493,6 +505,7 @@ body {
 
   color: #8e8f99;
   margin-bottom: 4px;
+  display: block;
 }
 .modal-icons {
   position: absolute;
@@ -502,7 +515,7 @@ body {
   fill: var(--dark);
   transition: fill var(--time-transition-duration)
     var(--transition-timing-function);
-    cursor: pointer;
+  cursor: pointer;
 }
 .modal-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -518,7 +531,11 @@ body {
   border-radius: 4px;
   resize: none;
   height: 120px;
-  margin-bottom: 16px;
+  background: transparent;
+  min-height: 40px;
+  outline: none;
+  transition: border-color var(--time-transition-duration)
+    var(--transition-timing-function);
 }
 .modal-comment::placeholder {
   font-size: 12px;
