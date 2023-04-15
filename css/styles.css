@@ -342,7 +342,7 @@ body {
   height: 20px;
   fill: var(--white-background);
 }
-.footer-form-contaner {
+.footer-form {
   display: flex;
   gap: 24px;
 }
@@ -478,7 +478,7 @@ body {
   fill: var(--white-background);
 }
 .modal-title {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   /* identical to box height, or 150% */
@@ -533,6 +533,7 @@ body {
   height: 120px;
   background: transparent;
   min-height: 40px;
+  padding: 8px 16px;
   outline: none;
   transition: border-color var(--time-transition-duration)
     var(--transition-timing-function);
