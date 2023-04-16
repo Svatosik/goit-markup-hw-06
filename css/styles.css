@@ -339,7 +339,7 @@ body {
 }
 .footer-btn-svg {
   width: 24px;
-  height: 20px;
+  height: 24px;
   fill: var(--white-background);
 }
 .footer-form {
@@ -493,6 +493,11 @@ body {
   flex-direction: column;
   margin-bottom: 8px;
   position: relative;
+}
+.wrap-modal-comment {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
 }
 .modal-label {
   font-size: 12px;
